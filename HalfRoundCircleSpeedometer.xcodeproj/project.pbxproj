@@ -21,6 +21,7 @@
 		B3DB89B81911E72F0022112B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DB899A1911E72E0022112B /* UIKit.framework */; };
 		B3DB89C01911E72F0022112B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3DB89BE1911E72F0022112B /* InfoPlist.strings */; };
 		B3DB89C21911E72F0022112B /* HalfRoundCircleSpeedometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DB89C11911E72F0022112B /* HalfRoundCircleSpeedometerTests.m */; };
+		B3DB89CE1911E8960022112B /* CircleCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DB89CD1911E8960022112B /* CircleCounter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		B3DB89BD1911E72F0022112B /* HalfRoundCircleSpeedometerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HalfRoundCircleSpeedometerTests-Info.plist"; sourceTree = "<group>"; };
 		B3DB89BF1911E72F0022112B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3DB89C11911E72F0022112B /* HalfRoundCircleSpeedometerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfRoundCircleSpeedometerTests.m; sourceTree = "<group>"; };
+		B3DB89CC1911E8960022112B /* CircleCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleCounter.h; sourceTree = "<group>"; };
+		B3DB89CD1911E8960022112B /* CircleCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleCounter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		B3DB898A1911E72E0022112B = {
 			isa = PBXGroup;
 			children = (
+				B3DB89CB1911E8700022112B /* CircleCounter */,
 				B3DB899C1911E72E0022112B /* HalfRoundCircleSpeedometer */,
 				B3DB89BB1911E72F0022112B /* HalfRoundCircleSpeedometerTests */,
 				B3DB89951911E72E0022112B /* Frameworks */,
@@ -150,6 +154,15 @@
 				B3DB89BE1911E72F0022112B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3DB89CB1911E8700022112B /* CircleCounter */ = {
+			isa = PBXGroup;
+			children = (
+				B3DB89CC1911E8960022112B /* CircleCounter.h */,
+				B3DB89CD1911E8960022112B /* CircleCounter.m */,
+			);
+			name = CircleCounter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +265,7 @@
 				B3DB89AD1911E72E0022112B /* ViewController.m in Sources */,
 				B3DB89A71911E72E0022112B /* AppDelegate.m in Sources */,
 				B3DB89A31911E72E0022112B /* main.m in Sources */,
+				B3DB89CE1911E8960022112B /* CircleCounter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

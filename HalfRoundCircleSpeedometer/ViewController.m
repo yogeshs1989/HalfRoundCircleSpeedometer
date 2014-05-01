@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    CGFloat percentage;
+}
 
 @end
 
@@ -18,6 +20,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    percentage = 5;
+    
+    self.circleCounter.delegate = self;
+    
+    [self.circleCounter startWithSeconds:10 endSecond:percentage withColor:[UIColor greenColor]];
+    
+    self.lblPercentage.text = [NSString stringWithFormat:@"%f", percentage * 10];
 }
 
 - (void)didReceiveMemoryWarning
